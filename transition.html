@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+        }
+
+        #box{
+            display: flex;
+            width:200px;
+            height:200px;
+            background-color: red;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        
+        #box:hover{
+            background-color: white;
+            width:400px;
+            height:400px;
+            font-size: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">Hover Me!</div>
+    </div>
+</body>
+</html>
